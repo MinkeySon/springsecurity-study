@@ -5,10 +5,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/spring-security-study")
-public class HelloController {
-    @GetMapping("/get")
-    public String hello(){
-        return "Hello";
+@RequestMapping("/index")
+public class IndexController {
+    @GetMapping()
+    public String index(){
+        return "index";
     }
 }
